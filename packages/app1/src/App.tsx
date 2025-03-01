@@ -1,5 +1,5 @@
 function App() {
-  return <>app1</>;
+  return <>{__APP_NAME__}</>;
 }
 
 export default App;

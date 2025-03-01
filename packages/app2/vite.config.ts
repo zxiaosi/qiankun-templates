@@ -12,7 +12,7 @@ export default ({ mode }) => {
       port: port, // 启动端口
     },
     define: {
-      __APP_NAME__: name, // 应用名称(全局变量)
+      __APP_NAME__: JSON.stringify(name), // 应用名称(全局变量)
     },
   });
 };
