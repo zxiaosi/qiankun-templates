@@ -14,6 +14,7 @@ npx zxiaosi
 | ------ | ------------------------------ | ------------------------------ |
 | `umi`  | `lerna` + `npm workspace`      | `umi-lerna-npm-workspace`      |
 | `umi`  | `lerna lite` + `npm workspace` | `umi-lerna-lite-npm-workspace` |
+| `umi`  | `pnpm workspace`               | `umi-pnpm-workspace`           |
 
 ## 参考文章
 
