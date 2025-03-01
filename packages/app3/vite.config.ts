@@ -3,8 +3,8 @@ import react from '@vitejs/plugin-react-swc';
 
 // https://vite.dev/config/
 export default ({ mode }) => {
-  const name = 'app';
-  const port = 8000;
+  const name = 'app3';
+  const port = 8003;
 
   return defineConfig({
     plugins: [react()],
