@@ -1,19 +1,23 @@
-## Qiankun 模板
+## Umi+Lerna Lite+Npm Workspace
 
-### [npm 地址](https://www.npmjs.com/package/@zxiaosi/cli)
+## 安装依赖
 
+### 全局安装 `Lerna Lite`
+
+```bash
+# 卸载 lerna
+npm uninstall -g lerna
+
+# 安装 lerna-lite
+npm install -g @lerna-lite/cli
 ```
-npm i @zxiaosi/cli -g
 
-npx zxiaosi
+### 安装项目依赖
+
+```bash
+npm install
 ```
 
-### 模板
-
-| 脚手架 | monorepo 管理工具         | 分支                      |
-| ------ | ------------------------- | ------------------------- |
-| `umi`  | `lerna` + `npm workspace` | `umi-lerna-npm-workspace` |
-
-## 参考文章
+## 参考
 
 - [Umi 实现微前端](https://zxiaosi.com/archives/b7c94f0c.html)

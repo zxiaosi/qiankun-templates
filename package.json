@@ -1,0 +1,10 @@
+{
+  "name": "root",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "@lerna-lite/cli": "^3.12.1"
+  }
+}
