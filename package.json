@@ -6,9 +6,9 @@
   ],
   "scripts": {
     "preinstall": "npx only-allow pnpm",
-    "app": "pnpm run dev -F app",
-    "app1": "pnpm run dev -F app1",
-    "app2": "pnpm run dev -F app2",
+    "app": "pnpm -F app dev ",
+    "app1": "pnpm -F app1 dev ",
+    "app2": "pnpm -F app2 dev ",
     "clean": "pnpm -r exec rimraf node_modules && rimraf ./node_modules"
   },
   "dependencies": {},
