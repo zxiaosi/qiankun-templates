@@ -4,7 +4,14 @@
   "workspaces": [
     "packages/*"
   ],
+  "scripts": {
+    "app": "npm run dev -w=app",
+    "app1": "npm run dev -w=app1",
+    "app2": "npm run dev -w=app2",
+    "clean": "npx lerna exec rimraf node_modules && npx rimraf node_modules"
+  },
   "devDependencies": {
-    "@lerna-lite/cli": "^3.12.1"
+    "@lerna-lite/cli": "^3.12.1",
+    "@lerna-lite/exec": "^3.12.1"
   }
 }
