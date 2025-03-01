@@ -1,19 +1,18 @@
-## Qiankun 模板
+## Umi+Pnpm Workspace
 
-### [npm 地址](https://www.npmjs.com/package/@zxiaosi/cli)
+## 安装依赖
 
+### 全局安装 `pnpm`
+
+```bash
+npm install -g pnpm
 ```
-npm i @zxiaosi/cli -g
 
-npx zxiaosi
+### 安装项目依赖
+
+```bash
+pnpm install
 ```
-
-### 模板
-
-| 脚手架 | monorepo 管理工具              | 分支                           |
-| ------ | ------------------------------ | ------------------------------ |
-| `umi`  | `lerna` + `npm workspace`      | `umi-lerna-npm-workspace`      |
-| `umi`  | `lerna lite` + `npm workspace` | `umi-lerna-lite-npm-workspace` |
 
 ## 参考文章
 
