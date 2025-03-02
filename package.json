@@ -4,6 +4,14 @@
   "workspaces": [
     "packages/*"
   ],
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "app": "pnpm -F app dev",
+    "app1": "pnpm -F app1 dev",
+    "app2": "pnpm -F app2 dev",
+    "app3": "pnpm -F app2 dev",
+    "clean": "pnpm -r exec rimraf node_modules && rimraf ./node_modules"
+  },
   "dependencies": {},
   "devDependencies": {}
 }
