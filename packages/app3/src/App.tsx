@@ -1,5 +1,23 @@
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+
+/** 路由前缀 */
+const basename = '/app3';
+
+/** 创建路由 */
+const routes = createBrowserRouter(
+  [
+    {
+      path: '/',
+      element: <h2>app3</h2>,
+    },
+  ],
+  {
+    basename,
+  }
+);
+
 function App() {
-  return <h2>app3</h2>;
+  return <RouterProvider router={routes} />;
 }
 
 export default App;

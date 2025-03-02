@@ -34,6 +34,8 @@
 }
 ```
 
+- 最后删除 node_modules 文件夹与 package-lock.json 文件，重新安装依赖 (重要！！！)
+
 ## 安装依赖
 
 ### 全局安装 `Lerna`
