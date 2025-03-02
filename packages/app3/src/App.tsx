@@ -17,7 +17,7 @@ const router: RouteObject[] = [
     path: '/',
     element: (
       <div>
-        <h2>app2</h2>
+        <h2>app3</h2>
 
         <Divider>样式</Divider>
 
