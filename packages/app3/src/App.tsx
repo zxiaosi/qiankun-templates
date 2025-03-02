@@ -19,7 +19,7 @@ const router: RouteObject[] = [
       <div>
         <h2>app3</h2>
 
-        <Divider>样式</Divider>
+        <Divider>样式隔离, 组件库样式未隔离</Divider>
 
         <div className="color">测试样式文字</div>
         <Button type="primary">测试组件库样式按钮</Button>
