@@ -1,0 +1,14 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+/* 测试样式文字 */
+.color {
+  color: red;
+}
+
+/* 测试组件库样式按钮 */
+.ant-btn {
+  height: 60px;
+}
