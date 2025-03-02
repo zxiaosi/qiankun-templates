@@ -8,9 +8,9 @@ import App from './App.tsx';
 import './index.css';
 
 /** 渲染函数 */
-const render = (container?: HTMLElement) => {
+const render = (container?: HTMLElement, microProps = {}) => {
   const app = container || (document.getElementById('root') as HTMLDivElement);
-  createRoot(app).render(<App />);
+  createRoot(app).render(<App microProps={microProps} />);
 };
 
 /** Qiankun 生命周期钩子 */
@@ -18,7 +18,7 @@ const qiankun = () => {
   renderWithQiankun({
     bootstrap() {},
     async mount(props: QiankunProps) {
-      render(props.container);
+      render(props.container, props);
     },
     update: () => {},
     unmount: () => {},
