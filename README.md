@@ -45,10 +45,7 @@ npm install -g lerna@6
 ### 安装项目依赖
 
 ```bash
-npm install
-
-# 或者
-lerna bootstrap
+npx lerna bootstrap
 ```
 
 ## 参考
