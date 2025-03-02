@@ -10,15 +10,15 @@ npx zxiaosi
 
 ### 模板
 
-| 脚手架              | monorepo 管理工具              | 分支                                    |
-| ------------------- | ------------------------------ | --------------------------------------- |
-| `umi`               | `lerna` + `npm workspace`      | `umi-lerna-npm-workspace`               |
-| `umi`               | `lerna lite` + `npm workspace` | `umi-lerna-lite-npm-workspace`          |
-| `umi`               | `pnpm workspace`               | `umi-pnpm-workspace`                    |
-| `qiankun` + `vite`  | `lerna` + `npm workspace`      | `qiankun-vite-lerna-npm-workspace`      |
-| `qiankun` + `vite`  | `lerna lite` + `npm workspace` | `qiankun-vite-lerna-lite-npm-workspace` |
-| `qiankun` + `vite`  | `pnpm workspace`               | `qiankun-vite-pnpm-workspace`           |
-| `qiankun` + `vite5` | `lerna6`                       | `qiankun-vite5-lerna6`                  |
+| 脚手架              | monorepo 管理工具              | 分支                                    | node 版本 |
+| ------------------- | ------------------------------ | --------------------------------------- | --------- |
+| `umi`               | `lerna` + `npm workspace`      | `umi-lerna-npm-workspace`               | `^18.0.0` |
+| `umi`               | `lerna lite` + `npm workspace` | `umi-lerna-lite-npm-workspace`          | `^18.0.0` |
+| `umi`               | `pnpm workspace`               | `umi-pnpm-workspace`                    | `^18.0.0` |
+| `qiankun` + `vite`  | `lerna` + `npm workspace`      | `qiankun-vite-lerna-npm-workspace`      | `^18.0.0` |
+| `qiankun` + `vite`  | `lerna lite` + `npm workspace` | `qiankun-vite-lerna-lite-npm-workspace` | `^18.0.0` |
+| `qiankun` + `vite`  | `pnpm workspace`               | `qiankun-vite-pnpm-workspace`           | `^18.0.0` |
+| `qiankun` + `vite5` | `lerna6`                       | `qiankun-vite5-lerna6`                  | `^16.0.0` |
 
 ## 参考文章
 
