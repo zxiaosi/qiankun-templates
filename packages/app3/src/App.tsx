@@ -1,22 +1,41 @@
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { useMemo } from 'react';
+import {
+  createBrowserRouter,
+  createHashRouter,
+  createMemoryRouter,
+  RouteObject,
+  RouterProvider,
+} from 'react-router-dom';
 
 /** 路由前缀 */
 const basename = '/app3';
 
 /** 创建路由 */
-const routes = createBrowserRouter(
-  [
-    {
-      path: '/',
-      element: <h2>app3</h2>,
-    },
-  ],
+const router: RouteObject[] = [
   {
-    basename,
-  }
-);
+    path: '/',
+    element: <h2>app3</h2>,
+  },
+];
 
-function App() {
+function App({ microProps }: any) {
+  const { routeType } = microProps;
+
+  const routes = useMemo(() => {
+    switch (routeType) {
+      case 'hash':
+        return createHashRouter(router, { basename });
+      case 'memory':
+        return createMemoryRouter(router, {
+          basename,
+          initialEntries: ['/app3'], // 初始化时指定初始路径, 用户可以通过浏览器前进后退操作
+          initialIndex: 0, // 初始化时指定初始索引
+        });
+      default:
+        return createBrowserRouter(router, { basename });
+    }
+  }, [routeType]);
+
   return <RouterProvider router={routes} />;
 }
 
