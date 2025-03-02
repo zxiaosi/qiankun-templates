@@ -17,6 +17,7 @@ npx zxiaosi
 | `umi`              | `pnpm workspace`               | `umi-pnpm-workspace`                    |
 | `qiankun` + `vite` | `lerna` + `npm workspace`      | `qiankun-vite-lerna-npm-workspace`      |
 | `qiankun` + `vite` | `lerna lite` + `npm workspace` | `qiankun-vite-lerna-lite-npm-workspace` |
+| `qiankun` + `vite` | `pnpm workspace`               | `qiankun-vite-pnpm-workspace`           |
 
 ## 参考文章
 
