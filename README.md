@@ -1,4 +1,4 @@
-## Umi+Lerna Lite+Npm Workspace
+## Qiankun+Vite+Lerna Lite+Npm Workspace
 
 ## 安装依赖
 
