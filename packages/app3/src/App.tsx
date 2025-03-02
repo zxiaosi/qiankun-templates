@@ -1,3 +1,4 @@
+import { Button, Divider } from 'antd';
 import { useMemo } from 'react';
 import {
   createBrowserRouter,
@@ -14,7 +15,16 @@ const basename = '/app3';
 const router: RouteObject[] = [
   {
     path: '/',
-    element: <h2>app3</h2>,
+    element: (
+      <div>
+        <h2>app2</h2>
+
+        <Divider>样式隔离, 组件库样式未隔离</Divider>
+
+        <div className="color">测试样式文字</div>
+        <Button type="primary">测试组件库样式按钮</Button>
+      </div>
+    ),
   },
 ];
 

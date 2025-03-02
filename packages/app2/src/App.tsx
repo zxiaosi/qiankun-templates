@@ -1,3 +1,4 @@
+import { Button, ConfigProvider, Divider } from 'antd';
 import { useMemo } from 'react';
 import {
   createBrowserRouter,
@@ -14,7 +15,16 @@ const basename = '/app2';
 const router: RouteObject[] = [
   {
     path: '/',
-    element: <h2>app2</h2>,
+    element: (
+      <div>
+        <h2>app2</h2>
+
+        <Divider>样式未隔离, 组件库样式隔离</Divider>
+
+        <div className="color">测试样式文字</div>
+        <Button type="primary">测试组件库样式按钮</Button>
+      </div>
+    ),
   },
 ];
 
@@ -36,7 +46,12 @@ function App({ microProps }: any) {
     }
   }, [routeType]);
 
-  return <RouterProvider router={routes} />;
+  return (
+    // 配置组件库样式前缀
+    <ConfigProvider prefixCls="app2">
+      <RouterProvider router={routes} />
+    </ConfigProvider>
+  );
 }
 
 export default App;
