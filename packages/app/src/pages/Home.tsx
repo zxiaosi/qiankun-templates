@@ -1,4 +1,4 @@
-import { Divider } from 'antd';
+import { Button, Divider } from 'antd';
 import { microApps } from '../main';
 import { useEffect, useRef } from 'react';
 import { loadMicroApp, MicroApp } from 'qiankun';
@@ -42,6 +42,11 @@ const Home = () => {
       <button onClick={() => handleClick('app1')}>加载 app1</button>
       <button onClick={() => handleClick('app2')}>加载 app2</button>
       <button onClick={() => handleClick('app3')}>加载 app3</button>
+
+      <Divider>样式</Divider>
+
+      <div className="color">测试样式文字</div>
+      <Button type="primary">测试组件库样式按钮</Button>
 
       <Divider>子应用</Divider>
 
