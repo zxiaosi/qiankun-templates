@@ -15,7 +15,10 @@ npx zxiaosi
 | `umi`  | `lerna` + `npm workspace`      | `umi-lerna-npm-workspace`      |
 | `umi`  | `lerna lite` + `npm workspace` | `umi-lerna-lite-npm-workspace` |
 | `umi`  | `pnpm workspace`               | `umi-pnpm-workspace`           |
+| `umi`  | `pnpm workspace`               | `umi-pnpm-workspace`           |
 
 ## 参考文章
 
 - [Umi 实现微前端](https://zxiaosi.com/archives/b7c94f0c.html)
+
+- [Qiankun+Vite 实现微前端](https://zxiaosi.com/archives/e1569209.html)
